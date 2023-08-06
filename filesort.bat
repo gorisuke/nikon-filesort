@@ -4,7 +4,6 @@ if not exist "%current_dir%\JPEG" mkdir "%current_dir%\JPEG"
 if not exist "%current_dir%\RAW" mkdir "%current_dir%\RAW"
 
 for %%f in (%current_dir%\*.*) do (
-    echo %%~xf
     if "%%~xf"==".JPG" (
         move "%%f" "%current_dir%\JPEG"
     ) else if "%%~xf"==".NEF" (

@@ -1,7 +1,7 @@
 @echo off
 set current_dir=%cd%
-if not exist "%current_dir%\JPG" mkdir "%current_dir%\JPEG"
-if not exist "%current_dir%\NEF" mkdir "%current_dir%\RAW"
+if not exist "%current_dir%\JPEG" mkdir "%current_dir%\JPEG"
+if not exist "%current_dir%\RAW" mkdir "%current_dir%\RAW"
 
 for %%f in (%current_dir%\*.*) do (
     echo %%~xf
